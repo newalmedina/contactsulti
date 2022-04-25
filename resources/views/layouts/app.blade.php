@@ -1320,12 +1320,12 @@
         </script>
         <!--end::Global Config-->
         <!--begin::Global Theme Bundle(used by all pages)-->
-        <script src="http://metronic7laravel.test/assets/admin/plugins/global/plugins.bundle.js"></script>
-        <script src="http://metronic7laravel.test/assets/admin/plugins/custom/prismjs/prismjs.bundle.js"></script>
-        <script src="http://metronic7laravel.test/assets/admin/js/scripts.bundle.js"></script>
+        <script src="{{asset('assets/admin/plugins/global/plugins.bundle.js')}}"></script>
+        <script src="{{asset('assets/admin/plugins/custom/prismjs/prismjs.bundle.js')}}"></script>
+        <script src="{{asset('assets/admin/js/scripts.bundle.js')}}"></script>
         <!--end::Global Theme Bundle-->
         <!--begin::Page Vendors(used by this page)-->
-        <script src="http://metronic7laravel.test/assets/admin/plugins/custom/fullcalendar/fullcalendar.bundle.js">
+        <script src="{{asset('assets/admin/plugins/custom/fullcalendar/fullcalendar.bundle.js')}}">
         </script>
         <!--end::Page Vendors-->
 
