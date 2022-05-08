@@ -19,13 +19,9 @@
             ul_breadcrumb
           "
         >
-          <li class="breadcrumb-item li_bread">
-            <router-link
-              :to="{ name: 'categories.index' }"
-              class="text-muted"
-              >{{ subtitle }}</router-link
-            >
-          </li>
+         <li class="breadcrumb-item li_bread">
+                        {{ subtitle }}
+                    </li>
         </ul>
         <!--begin::Breadcrumb-->
       </div>

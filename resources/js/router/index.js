@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import DashboardIndex from '../components/dashboard/DashboardIndex.vue'
 import CompaniesIndex from '../components/companies/CompaniesIndex.vue'
 import CompaniesEdit from '../components/companies/CompaniesEdit.vue'
+import ProfileEdit from '../components/profile/ProfileEdit.vue'
 import CategoriesIndex from '../components/categories/CategoriesIndex.vue'
 import CategoriesEdit from '../components/categories/CategoriesEdit.vue'
 
@@ -11,6 +12,12 @@ const routes = [
         path: '/home',
         name: 'dashboard.index',
         component: DashboardIndex
+    },
+    {
+        path: '/profiles/:id/edit',
+        name: 'profile.edit',
+        component: ProfileEdit,
+        props: true
     },
     {
         path: '/companies',
@@ -22,6 +29,7 @@ const routes = [
         name: 'companies.create',
         component: CompaniesEdit
     },
+
    {
         path: '/companies/:id/edit',
         name: 'companies.edit',

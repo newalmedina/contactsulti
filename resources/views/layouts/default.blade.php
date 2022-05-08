@@ -181,11 +181,8 @@
                             </div>
                         </div>
                         <div class="navi-text">
-                            <div class="font-weight-bold">My Profile</div>
-                            <div class="text-muted">
-                                Account settings and more
-                                <span class="label label-light-danger label-inline font-weight-bold">update</span>
-                            </div>
+                            <div class="font-weight-bold">Mi perfil</div>
+
                         </div>
                     </div>
                 </a>
