@@ -19,9 +19,9 @@
             ul_breadcrumb
           "
         >
-         <li class="breadcrumb-item li_bread">
-                        {{ subtitle }}
-                    </li>
+          <li class="breadcrumb-item li_bread">
+            {{ subtitle }}
+          </li>
         </ul>
         <!--begin::Breadcrumb-->
       </div>
@@ -58,6 +58,8 @@
               <!--end::Header-->
               <!--begin::Body-->
               <div class="card-body pt-0 pb-3">
+                <!--begin::datatable-->
+                <!--begin: Datatable-->
                 <table class="table table-striped mt-3">
                   <thead>
                     <tr>
@@ -94,6 +96,8 @@
                     </tr>
                   </tbody>
                 </table>
+                <!--end: Datatable-->
+                <!--end::datatable-->
               </div>
               <!--end::Body-->
             </div>
@@ -120,8 +124,14 @@ export default {
   },
   mounted() {
     this.getCategories();
+    this.tabla();
   },
   methods: {
+    tabla() {
+      this.$nextTick(() => {
+        $("#tableCategories").DataTable();
+      });
+    },
     async getCategories() {
       await axios
         .get("/api/categories")

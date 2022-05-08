@@ -32,6 +32,13 @@
     <link href="{{asset('assets/admin/css/themes/layout/header/menu/light.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/admin/css/themes/layout/brand/dark.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/admin/css/themes/layout/aside/dark.css')}}" rel="stylesheet" type="text/css" />
+
+    <link href="{{ asset('assets/admin/js/pages/crud/datatables.net/css/dataTables.bootstrap4.min.css') }}"
+        rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/admin/js/pages/crud/datatables.net/css/responsive.bootstrap4.min.css') }}"
+        rel="stylesheet" type="text/css" />
+
+
     <!--end::Layout Themes-->
     <link rel="shortcut icon" href="{{asset('assets/admin/media/logos/favicon.ico')}}" />
     @yield('head_page')
@@ -1306,6 +1313,14 @@
 
     @yield('foot_page')
     <!--end::Body-->
+
+    <!--begin::datatable screipt-->
+    <script src="{{asset('assets/admin/js/pages/crud/datatables.net/js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{asset('assets/admin/js/pages/crud/datatables.net/js/dataTables.bootstrap4.min.js')}}"></script>
+    <script src="{{asset('assets/admin/js/pages/crud/datatables.net/js/dataTables.responsive.min.js')}}"></script>
+    <script src="{{asset('assets/admin/js/pages/crud/datatables.net/js/responsive.bootstrap4.min.js')}}"></script>
+
+    <!--end::Page Scripts-->
 
     <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1"
         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
